@@ -8,6 +8,8 @@
   <li v-for="animal in animals" :key="animal">{{animal}}
   </li>
 </ul>
+<button v-if="loggedIn">logout</button>
+<button v-else >login</button>
   </div>
 </template>
 
