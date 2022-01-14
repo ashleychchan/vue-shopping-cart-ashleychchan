@@ -8,8 +8,8 @@
   <li v-for="animal in animals" :key="animal">{{animal}}
   </li>
 </ul>
-<button v-if="loggedIn">logout</button>
-<button v-else >login</button>
+<button v-on:click="authState" v-if="loggedIn">logout</button>
+<button v-on:click="authState" v-else >login</button>
   </div>
 </template>
 
@@ -24,8 +24,18 @@ export default {
     return {
       student:"harry",
       graduated: false,
-      animals: ["doo","poo","ajfj","sgsa"]
+      animals: ["doo","poo","ajfj","sgsa"],
+      loggedIn: true,
     };
+  },
+  methods:{
+authState: function(){
+  if(this.loggedIn===false){
+    this.loggedIn= true;
+  } else{
+    this.loggedIn= false;
+  }
+}
   }
 }
 </script>
