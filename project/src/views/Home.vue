@@ -20,6 +20,12 @@
 <label for="mike">Mike</label>
 <br/>
 <span>Checked Names: {{checkedNames}}</span>
+<select v-model="selected">
+<option >a</option>
+<option >b</option>
+<option >c</option>
+</select>
+<span>{{ selected }}</span>
   </div>
 </template>
 
@@ -36,7 +42,9 @@ export default {
       graduated: false,
       animals: ["doo","poo","ajfj","sgsa"],
       loggedIn: true,
-      message:"",
+      message:"", 
+      checkedNames:[],
+      selected:"",
     };
   },
   methods:{
