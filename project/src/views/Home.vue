@@ -26,6 +26,7 @@
 <option >c</option>
 </select>
 <span>{{ selected }}</span>
+<h2>{{now}}</h2>
   </div>
 </template>
 
@@ -47,6 +48,7 @@ export default {
       selected:"",
     };
   },
+  
   methods:{
 authState: function(){
   if(this.loggedIn===false){
