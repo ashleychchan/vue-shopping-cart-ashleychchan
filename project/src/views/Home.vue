@@ -27,16 +27,18 @@
 </select>
 <span>{{ selected }}</span>
 <h2>{{now}}</h2>
+<Button>hi</Button>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
-
+import Button from "../components/Button.vue";
 export default {
   name: 'Home',
-  components: {},
+  components: {
+    Button,
+  },
   data(){
     return {
       student:"harry",
