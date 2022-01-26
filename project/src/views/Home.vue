@@ -28,16 +28,21 @@
 <span>{{ selected }}</span>
 <h2>{{now}}</h2>
 <Button>hi</Button>
+<Card title="HElllo" description="dfgdfg trsggd" :cost="77"
+ image="https://cdn.pixabay.com/photo/2021/07/25/12/22/tourist-attraction-6491734_960_720.jpg"/>
+ <Card v-for="destination in destination" :key="destination.name"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Button from "../components/Button.vue";
+import Card from "../components/Card.vue";
 export default {
   name: 'Home',
   components: {
     Button,
+    Card
   },
   data(){
     return {
@@ -48,6 +53,17 @@ export default {
       message:"", 
       checkedNames:[],
       selected:"",
+      destinations:[
+        {
+          name: "Insulin",
+          description:"Too bad for you if you have diabetes",
+          cost:"88.00",
+          img:"https://cdn.pixabay.com/photo/2017/01/11/20/39/insulin-syringe-1972843_960_720.jpg"
+        },
+        {
+          name:"omg"
+        }
+      ]
     };
   },
   

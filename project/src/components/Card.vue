@@ -1,9 +1,9 @@
 <template>
-    <div>
+    <div class="card">
         <h2>{{title}}</h2>
-        <img src="" alt="">
-        <h3>cost</h3>
-        <p>description</p>
+        <img v-bind:src="image" alt="">
+        <h3>{{cost}}</h3>
+        <p>{{description}}</p>
     </div>
 </template>
 
@@ -13,12 +13,17 @@ export default {
     props:{
        title:String,
        image:String,
-       cost: Number,
+       cost: String,
        description: String,
    },
 };
    
 </script>
-<style scoped>
-
+<style >
+.card{
+    width: 19rem;
+    height: 19rem;
+    background-color: royalblue;
+    margin: 10px auto;
+}
 </style>
