@@ -13,7 +13,7 @@ export default {
     props:{
        title:String,
        image:String,
-       cost: String,
+       cost: Number,
        description: String,
    },
 };
@@ -21,9 +21,14 @@ export default {
 </script>
 <style >
 .card{
-    width: 19rem;
-    height: 19rem;
+    width: 20rem;
+    height: 20rem;
     background-color: royalblue;
-    margin: 10px auto;
+    margin: 4rem auto;
+}
+img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
 }
 </style>
