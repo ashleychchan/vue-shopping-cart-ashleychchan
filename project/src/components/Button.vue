@@ -10,7 +10,7 @@ name: "Button",
 button{
     width: 9rem;
     font-size: 30px;
-    background-color: royalblue;
+    background-color: rgb(231, 207, 162);
     border-radius: 20px;
     color: salmon;
 }

@@ -25,15 +25,18 @@
 </select>
 <span>{{ selected }}</span>
 <h2>{{now}}</h2>
+
 <Button>hi</Button>
 <!-- <Card title="HElllo" description="dfgdfg trsggd" :cost="77"
  image="https://cdn.pixabay.com/photo/2021/07/25/12/22/tourist-attraction-6491734_960_720.jpg"/> -->
- <Card v-for="destination in destinations" 
+ <div class="cards">
+ <Card class="cardy" v-for="destination in destinations" 
  :key="destination.name"
  :title="destination.name" 
  :description="destination.description" 
  :image="destination.img"
  :cost="destination.cost"/>
+ </div>
   </div>
 </template>
 
@@ -115,7 +118,7 @@ export default {
           name: "toothpaste",
           description:"Too bad for you if you want clean teeth",
           cost:"88.00",
-          img:"https://cdn.pixabay.com/photo/2017/01/11/20/39/insulin-syringe-1972843_960_720.jpg"
+          img:"https://www.cvs.com/bizcontent/merchandising/productimages/large/35000971593_4.jpg"
         },
         {
           name: "gummy candies",
@@ -154,5 +157,17 @@ authState: function(){
 <style>
 h1{
   color: red;
+}
+.cards{
+    display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+ margin: 2rem;
+}
+.cardy{
+  margin: 2rem;
+  height: 35rem;
+  width: 25rem;
 }
 </style>
