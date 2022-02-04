@@ -4,7 +4,9 @@
         <img v-bind:src="image" alt="">
         <h3 class="card-cost">{{cost}}</h3>
         <p class="card-description">{{description}}</p>
-        <Button>BUY</Button>
+        <Button v-on:click="buyNowState" v-if="inCart"> add to cart </Button>
+     <Button v-on:click="buyNowState" v-else>remove from cart</Button>
+   
     </div>
 </template>
 

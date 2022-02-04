@@ -150,7 +150,15 @@ authState: function(){
   } else{
     this.loggedIn= false;
   }
-}
+},
+buyNowState: function(){
+  if(this.incart===false){
+    this.incart= true;
+  } else{
+    this.incart= false;
+  }
+  },
+
   }
 }
 </script>

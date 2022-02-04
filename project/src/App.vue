@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">animal-ful</router-link> |
+      <router-link to="/about">cart <img class="icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""></router-link>
     </div>
     <router-view/>
   </div>
@@ -29,4 +29,9 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+.icon{
+  width: 1rem;
+  height: 1rem;
+}
+
 </style>
