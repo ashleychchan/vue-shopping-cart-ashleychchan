@@ -36,6 +36,7 @@
  :description="destination.description" 
  :image="destination.img"
  :cost="destination.cost"/>
+ 
  </div>
   </div>
 </template>
