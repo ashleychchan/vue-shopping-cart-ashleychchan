@@ -35,11 +35,16 @@ img{
     height: 14rem;
     object-fit: cover;
 }
-.card-title{
-    margin: 3rem;
-}
-Button{
+.card-title, .card-cost
+{
     margin: 1rem;
+    text-align: left;
+}
+ .card-description{
+     margin:  0rem 0rem 0rem 1rem
+ }
+Button{
+    margin: 2.5rem;
 }
 
 </style>

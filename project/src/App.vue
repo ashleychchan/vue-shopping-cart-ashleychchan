@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">animal-ful</router-link> |
+      <router-link to="/">animal-ful</router-link> 
       <router-link to="/about">cart <img class="icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""></router-link>
     </div>
     <router-view/>
@@ -9,26 +9,31 @@
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+html, body{
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden;
 }
-
+body{
+  background-color: white;
+}
 #nav {
-  padding: 30px;
+  padding: 2rem;
+  width: 100%;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: darkgray;
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 1rem;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: purple;
 }
+
 .icon{
   width: 1rem;
   height: 1rem;

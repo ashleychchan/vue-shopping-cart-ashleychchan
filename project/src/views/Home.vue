@@ -79,7 +79,7 @@ export default {
           img:"https://m.media-amazon.com/images/I/41VIkN0BOML._SL1037_.jpg"
         },
         {
-          name: "plastic bags",
+          name: "plastic bag",
           description:"too bad for you if you want to choke turtles",
           cost:"88.00",
           img:"https://www.popsci.com/uploads/2020/10/28/5BTIYSAMBJFPNBSWOHYQW4KKBE.jpg?auto=webp&width=1440&height=1080"
@@ -97,13 +97,13 @@ export default {
           img:"https://shop.crayola.com/dw/image/v2/AALB_PRD/on/demandware.static/-/Sites-crayola-storefront/default/dwdfa66042/images/52-3008_8ct_Crayons_PDP_02.jpg?sw=790&sh=790&sm=fit&sfrm=jpg"
         },
         {
-          name: "cake mixes",
+          name: "cake mix",
           description:"too bad for you if you want fluffy cakes",
           cost:"88.00",
           img:"https://i5.walmartimages.com/asr/8b383ecf-736c-46ea-8758-2482639c1180.282e759491d1beeb1a497b4fc52ad75e.png?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
         },
         {
-          name: "bagels",
+          name: "bagel",
           description:"too bad for you if you like cream cheese",
           cost:"88.00",
           img:"https://cdn.loveandlemons.com/wp-content/uploads/2020/05/bagel-recipe.jpg"
@@ -170,12 +170,13 @@ h1{
     display: flex;
   flex-direction: row;
   flex-flow: wrap;
-  justify-content: space-evenly;
- margin: 2rem;
+  justify-content: center;
+ margin: 8rem;
 }
 .cardy{
-  margin: 2rem;
-  height: 35rem;
-  width: 25rem;
+  margin: 4rem;
+  height: 32rem;
+  width: 14rem;
 }
+
 </style>
