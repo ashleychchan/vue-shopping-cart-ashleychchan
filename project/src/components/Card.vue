@@ -4,8 +4,7 @@
         <img v-bind:src="image" alt="">
         <h3 class="card-cost">{{cost}}</h3>
         <p class="card-description">{{description}}</p>
-        <Button v-on:click="buyNowState" v-if="inCart"> add to cart </Button>
-     <Button v-on:click="buyNowState" v-else>remove from cart</Button>
+        <Button v-on:click="addItemToCart(destination)" > add to cart </Button>
    
     </div>
 </template>
@@ -16,9 +15,14 @@ export default {
     props:{
        title:String,
        image:String,
-       cost: Number,
+       cost: String,
        description: String,
    },
+   methods:{
+       addItemToCart(destination){
+console.log(destination);
+       }
+   }
 };
    
 </script>
