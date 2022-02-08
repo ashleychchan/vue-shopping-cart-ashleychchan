@@ -13,10 +13,7 @@
 export default {
     name:"card",
     props:{
-       title:String,
-       image:String,
-       cost: String,
-       description: String,
+      
    },
    methods:{
        addItemToCart(destination){
