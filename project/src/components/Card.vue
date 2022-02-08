@@ -4,7 +4,8 @@
         <h2 class="card-title">{{title}}</h2>
         <h3 class="card-cost">${{cost}}</h3>
         <p class="card-description">{{description}}</p>
-   <Button>add</Button>
+        <Button v-on:click="addItemToCart(destination)" > add to cart </Button>
+   
     </div>
 </template>
 
@@ -17,6 +18,11 @@ export default {
        cost: String,
        description: String,
    },
+   methods:{
+       addItemToCart(destination){
+console.log(destination);
+       }
+   }
 };
    
 </script>
