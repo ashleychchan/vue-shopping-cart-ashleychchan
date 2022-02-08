@@ -24,8 +24,6 @@
 <option >c</option>
 </select>
 <span>{{ selected }}</span>
-<h2>{{now}}</h2>
-
 <Button>hi</Button>
 <!-- <Card title="HElllo" description="dfgdfg trsggd" :cost="77"
  image="https://cdn.pixabay.com/photo/2021/07/25/12/22/tourist-attraction-6491734_960_720.jpg"/> -->
@@ -176,7 +174,7 @@ h1{
 }
 .cardy{
   margin: 4rem;
-  height: 32rem;
+  height: 30rem;
   width: 14rem;
 }
 

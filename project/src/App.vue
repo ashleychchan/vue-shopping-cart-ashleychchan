@@ -35,8 +35,8 @@ body{
 }
 
 .icon{
-  width: 1rem;
-  height: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 </style>

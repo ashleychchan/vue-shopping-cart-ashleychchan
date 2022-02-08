@@ -1,8 +1,8 @@
 <template>
     <div class="card">
-        <h2 class="card-title">{{title}}</h2>
         <img v-bind:src="image" alt="">
-        <h3 class="card-cost">$ {{cost}}</h3>
+        <h2 class="card-title">{{title}}</h2>
+        <h3 class="card-cost">${{cost}}</h3>
         <p class="card-description">{{description}}</p>
    <Button>add</Button>
     </div>
@@ -24,18 +24,18 @@ export default {
 .card{
     width: 30rem;
     height: 30rem;
-    background-color: royalblue;
+    background-color: rgb(245, 207, 213);
     margin: 4rem auto;
-    border-radius: 1rem;
+   
 }
 img{
     width: 14rem;
-    height: 14rem;
+    height: 18rem;
     object-fit: cover;
 }
 .card-title, .card-cost
 {
-    margin: 1rem;
+    margin: 0.3rem 1rem;
     text-align: left;
 }
  .card-description{
