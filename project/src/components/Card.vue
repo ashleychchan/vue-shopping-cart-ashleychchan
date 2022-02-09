@@ -1,9 +1,9 @@
 <template>
     <div class="card">
-        <img v-bind:src="image" alt="">
-        <h2 class="card-title">{{title}}</h2>
-        <h3 class="card-cost">${{cost}}</h3>
-        <p class="card-description">{{description}}</p>
+        <img v-bind:src="products.image" alt="">
+        <h2 class="card-title">{{products.title}}</h2>
+        <h3 class="card-cost">${{products.cost}}</h3>
+        <p class="card-description">{{products.description}}</p>
         <Button v-on:click="addItemToCart(destination)" > add to cart </Button>
    
     </div>

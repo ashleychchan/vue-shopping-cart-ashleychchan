@@ -30,21 +30,21 @@
 <!-- <Card title="HElllo" description="dfgdfg trsggd" :cost="77"
  image="https://cdn.pixabay.com/photo/2021/07/25/12/22/tourist-attraction-6491734_960_720.jpg"/> -->
  <div class="cards">
- <Card class="cardy" v-for="destination in destinations" 
- :key="destination.name"
- :title="destination.name" 
- :description="destination.description" 
- :image="destination.img"
- :cost="destination.cost"/>
+ <Card class="cardy" v-for="product in products" 
+ :key="product.name"
+ :title="product.name" 
+ :description="product.description" 
+ :image="product.img"
+ :cost="product.cost"/>
  </div>
   </div>
 </template>
-physically walk over here per favor 
+
 <script>
 // @ is an alias to /src
 import Button from "../components/Button.vue";
 import Card from "../components/Card.vue";
-import products from"@/products.json";
+import products from"../products.js";
 export default {
   name: 'Home',
   components: {
@@ -61,7 +61,7 @@ export default {
       checkedNames:[],
       selected:"",
       cart:[],
-      
+      products,
     };
   },
   
