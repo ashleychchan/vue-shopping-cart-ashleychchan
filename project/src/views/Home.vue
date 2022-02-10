@@ -24,7 +24,7 @@
 <option >c</option>
 </select>
 <span>{{ selected }}</span>
-<Button>hi</Button>
+<Button>cart</Button>
 <!-- <Card title="HElllo" description="dfgdfg trsggd" :cost="77"
  image="https://cdn.pixabay.com/photo/2021/07/25/12/22/tourist-attraction-6491734_960_720.jpg"/> -->
  <div class="cards">
