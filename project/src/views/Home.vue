@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1 v-if="graduated">{{student}}</h1>
+    <!-- <h1 v-if="graduated">{{student}}</h1>
     <h1 v-else>"stupid"</h1>
 <ul>
   <li v-for="animal in animals" :key="animal">{{animal}}
@@ -23,7 +23,7 @@
 <option >b</option>
 <option >c</option>
 </select>
-<span>{{ selected }}</span>
+<span>{{ selected }}</span> -->
 <Button>cart</Button>
 <div class="cart">
   <h1>{{cart.length}} in cart</h1>
