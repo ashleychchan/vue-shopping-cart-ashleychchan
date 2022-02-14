@@ -4,14 +4,14 @@
         <h2 class="card-title">{{title}}</h2>
         <h3 class="card-cost">${{cost}}</h3>
         <p class="card-description">{{description}}</p>
-        <Button v-on:click="addItemToCart(destination)" > add to cart </Button>
+        <Button v-on:click="addItemToCart(product)" > add to cart </Button>
    
     </div>
 </template>
 
 <script>
 export default {
-    name:"card",
+    name:"Card", 
     props:{
        title:String,
        image:String,
@@ -19,9 +19,10 @@ export default {
        description: String,
    },
    methods:{
-       addItemToCart(destination){
-console.log(destination);
-       }
+    addItemToCart(product){
+    this.cart.push(product);
+    console.log(this.cart);
+}
    }
 };
    

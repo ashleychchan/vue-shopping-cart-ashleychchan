@@ -25,17 +25,24 @@
 </select>
 <span>{{ selected }}</span>
 <Button>cart</Button>
-<!-- <Card title="HElllo" description="dfgdfg trsggd" :cost="77"
- image="https://cdn.pixabay.com/photo/2021/07/25/12/22/tourist-attraction-6491734_960_720.jpg"/> -->
+<div class="cart">
+  <h1>{{cart.length}} in cart</h1>
+  <Cart class="carty"
+  v-for="product in cart"
+ :key="product.name"
+ :image="product.img"
+  />
+</div>
+
  <div class="cards">
- <Card class="cardy" v-for="destination in destinations" 
- :key="destination.name"
- :title="destination.name" 
- :description="destination.description" 
- :image="destination.img"
- :cost="destination.cost"/>
- 
+ <Card class="cardy" v-for="product in products" 
+ :key="product.name"
+ :title="product.name" 
+ :description="product.description" 
+ :image="product.img"
+ :cost="product.cost"/>
  </div>
+
   </div>
 </template>
 
@@ -43,11 +50,13 @@
 // @ is an alias to /src
 import Button from "../components/Button.vue";
 import Card from "../components/Card.vue";
+import Cart from '../components/Cart.vue';
 export default {
   name: 'Home',
   components: {
     Button,
-    Card
+    Card,
+    Cart
   },
   data(){
     return {
@@ -58,7 +67,13 @@ export default {
       message:"", 
       checkedNames:[],
       selected:"",
-      destinations:[
+      cart:[{
+          name: "insulin",
+          description:"too bad for you if you have diabetes",
+          cost:"88.00",
+          img:"https://cdn.pixabay.com/photo/2017/01/11/20/39/insulin-syringe-1972843_960_720.jpg"
+        }],
+      products:[
         {
           name: "insulin",
           description:"too bad for you if you have diabetes",
@@ -157,7 +172,7 @@ buyNowState: function(){
     this.incart= false;
   }
   },
-
+  
   }
 }
 </script>
