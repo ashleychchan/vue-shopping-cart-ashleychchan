@@ -1,13 +1,15 @@
 <template>
-    <div>
-        <p>this is the cart</p>
+    <div class="cart">
         <div class="card">
-        <img v-bind:src="image" alt="">
+            <div class="card-image">
+                <img v-bind:src="image" alt="">
+            </div>
+       <div class="card-text">
         <h2 class="card-title">{{title}}</h2>
         <h3 class="card-cost">${{cost}}</h3>
         <p class="card-description">{{description}}</p>
-        <Button v-on:click="removeItemFromCart(product)" > remove </Button>
-   
+        <Button @click="$emit('removeItemFromCart')" > remove </Button>
+       </div>
     </div>
     </div>
 </template>
@@ -20,10 +22,37 @@ export default {
        cost: String,
        description: String,
    },
-   methods:{
-    removeItemFromCart(product){
-        this.cart.splice(this.cart.indexOf(product),1);
-    }
-   }
 }
 </script>
+<style scoped >
+.card{
+    display: grid;
+    grid-template-columns: auto auto ;
+    
+}
+.card{
+    width: 30rem;
+    height: 8rem;
+    background-color: rgb(245, 207, 213);
+    margin: 4rem auto;
+   
+}
+img{
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+}
+.card-title, .card-cost
+{
+    margin: 0.3rem 1rem;
+    text-align: left;
+}
+ .card-description{
+     margin:  0rem 0rem 0rem 1rem
+ }
+Button{
+    margin: 2.5rem;
+}
+
+</style>
+

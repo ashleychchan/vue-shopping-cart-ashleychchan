@@ -29,18 +29,21 @@
   <h1>{{cart.length}} in cart</h1>
   <Cart class="carty"
   v-for="product in cart"
+  @removeItemFromCart="removeItemFromCart(product)" 
  :key="product.name"
  :image="product.img"
   />
 </div>
 
  <div class="cards">
- <Card class="cardy" v-for="product in products" 
+ <Card class="cardy" v-for="product in products"
+ @addItemToCart="addItemToCart(product)" 
  :key="product.name"
  :title="product.name" 
  :description="product.description" 
  :image="product.img"
  :cost="product.cost"/>
+ 
  </div>
 
   </div>
@@ -172,7 +175,13 @@ buyNowState: function(){
     this.incart= false;
   }
   },
-  
+    addItemToCart(product){
+    this.cart.push(product);
+    console.log(this.cart);
+},
+  removeItemFromCart(product){
+  this.cart.splice(this.cart.indexOf(product),1);
+    }
   }
 }
 </script>
