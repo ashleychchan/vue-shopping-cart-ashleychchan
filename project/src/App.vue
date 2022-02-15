@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">animal-ful</router-link> 
+      <router-link to="/">Vegan Repellent</router-link> 
       <router-link to="/about">cart <img class="icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""></router-link>
     </div>
     <router-view/>
