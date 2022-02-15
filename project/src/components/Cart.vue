@@ -51,7 +51,7 @@ img{
      margin:  0rem 0rem 0rem 1rem
  }
 Button{
-    margin: 2.5rem;
+    margin: .5rem;
 }
 
 </style>

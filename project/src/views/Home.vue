@@ -32,6 +32,8 @@
   @removeItemFromCart="removeItemFromCart(product)" 
  :key="product.name"
  :image="product.img"
+ :title="product.name"
+ :cost="product.cost"/>
   />
 </div>
 
