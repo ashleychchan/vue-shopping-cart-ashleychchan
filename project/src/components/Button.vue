@@ -8,10 +8,10 @@ name: "Button",
 </script>
 <style>
 button{
-    width: 9rem;
+    width: 8rem;
     font-size: 20px;
-    background-color: rgb(231, 207, 162);
-    border-radius: 20px;
-    color: salmon;
+    background-color: rgb(239,78,66);
+    color: white;
+    border: none;
 }
 </style>

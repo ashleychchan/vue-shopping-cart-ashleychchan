@@ -1,10 +1,13 @@
 <template>
     <div class="card">
         <img v-bind:src="image" alt="">
-        <h2 class="card-title">{{title}}</h2>
-        <h3 class="card-cost">${{cost}}</h3>
+        <h1 class="card-title">{{title}}</h1>
         <p class="card-description">{{description}}</p>
-        <Button @click="$emit('addItemToCart')" > add to cart </Button>
+        <div class="card-line">
+            <h3 class="card-cost">${{cost}}</h3>
+<Button @click="$emit('addItemToCart')" > add to cart </Button>
+        </div>
+        
    
     </div>
 </template>
@@ -26,7 +29,6 @@ export default {
 .card{
     width: 30rem;
     height: 30rem;
-    background-color: rgb(245, 207, 213);
     margin: 4rem auto;
    
 }
@@ -34,17 +36,20 @@ img{
     width: 14rem;
     height: 18rem;
     object-fit: cover;
+    border: solid rgb(41,43,131) 3px;
 }
 .card-title, .card-cost
 {
-    margin: 0.3rem 1rem;
+    margin: 0rem 0rem;
     text-align: left;
 }
  .card-description{
-     margin:  0rem 0rem 0rem 1rem
+    margin: 1rem 0rem 2rem 0rem;
  }
-Button{
-    margin: 2.5rem;
-}
+ .card-line{
+  display: flex;
+  justify-content: space-between;
+ }
+
 
 </style>

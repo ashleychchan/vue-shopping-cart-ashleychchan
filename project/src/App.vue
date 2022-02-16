@@ -20,6 +20,7 @@ body{
 #nav {
   padding: 2rem;
   width: 100%;
+  background-color: rgb(232,226,215);
 }
 
 #nav a {
@@ -31,7 +32,7 @@ body{
 }
 
 #nav a.router-link-exact-active {
-  color: purple;
+  color: rgb(41,43,131);
 }
 
 .icon{

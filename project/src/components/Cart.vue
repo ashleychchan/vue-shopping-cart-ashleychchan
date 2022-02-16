@@ -7,8 +7,10 @@
        <div class="card-text">
         <h2 class="card-title">{{title}}</h2>
         <h3 class="card-cost">${{cost}}</h3>
-        <p class="card-description">{{description}}</p>
-        <Button @click="$emit('removeItemFromCart')" > remove </Button>
+        <p class="card-qty">quantity:{{quantity}}</p>
+        </div>
+        <div class="cardbutton">
+<Button @click="$emit('removeItemFromCart')" > x </Button>
        </div>
     </div>
     </div>
@@ -20,38 +22,45 @@ export default {
        title:String,
        image:String,
        cost: String,
-       description: String,
+       quantity: Number,
    },
+
 }
 </script>
 <style scoped >
 .card{
     display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-column-gap: 3rem;
+    display: flex;
+
     
 }
 .card{
     width: 30rem;
-    height: 8rem;
-    background-color: rgb(245, 207, 213);
+    height: 7.8rem;
+    background-color: rgb(231, 207, 245);
     margin: 4rem auto;
+    border: solid rgb(41,43,131) 3px;
    
 }
 img{
-    width: 8rem;
-    height: 8rem;
+    width: 7.5rem;
+    height: 7.5rem;
     object-fit: cover;
+ 
 }
-.card-title, .card-cost
+.card-title
 {
-    margin: 0.3rem 1rem;
+    margin-top: .7rem;
     text-align: left;
 }
  .card-description{
      margin:  0rem 0rem 0rem 1rem
  }
+
 Button{
-    margin: .5rem;
+    margin-top: 3rem;
 }
 
 </style>
