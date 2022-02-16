@@ -43,6 +43,9 @@ img{
     margin: 0rem 0rem;
     text-align: left;
 }
+.card-cost{
+    margin-top: .7rem;
+}
  .card-description{
     margin: 1rem 0rem 2rem 0rem;
  }

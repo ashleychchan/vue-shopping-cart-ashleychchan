@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Vegan Repellent</router-link> 
-      <router-link to="/about">cart <img class="icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""></router-link>
+      <router-link to="/about"></router-link>
     </div>
     <router-view/>
   </div>
@@ -33,11 +33,14 @@ body{
 
 #nav a.router-link-exact-active {
   color: rgb(41,43,131);
+  font-size: 4rem;
+  justify-content: left;
 }
 
 .icon{
   width: 1.4rem;
   height: 1.4rem;
 }
+
 
 </style>

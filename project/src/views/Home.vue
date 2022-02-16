@@ -24,7 +24,7 @@
 <option >c</option>
 </select>
 <span>{{ selected }}</span> -->
-<Button>Cart<img class="icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""></Button>
+<Button class="cart-button">Cart    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""></Button>
 <div class="cart">
   <h1>{{cart.length}} in cart</h1>
   <Cart class="carty"
@@ -240,8 +240,18 @@ h1 {
   
 }
 .icon{
-  width: 3rem;
-  height: 3rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  border: none;
+}
+.cart-button{
+  position: absolute;
+  right: 0px;
+  padding: 10px;
+ margin-right: 7rem;
+}
+Button{
+  justify-content: right;
 }
 
 </style>

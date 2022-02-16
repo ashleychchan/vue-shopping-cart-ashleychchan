@@ -13,5 +13,7 @@ button{
     background-color: rgb(239,78,66);
     color: white;
     border: none;
+    padding: .7rem;
+    justify-content: flex-end;
 }
 </style>
