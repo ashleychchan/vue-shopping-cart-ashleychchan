@@ -1,5 +1,8 @@
+
 <template>
-  <div class="home">
+<html lang="en">
+<title>Vegan Repellent</title>
+<div class="home">
     <!-- <h1 v-if="graduated">{{student}}</h1>
     <h1 v-else>"stupid"</h1>
 <ul>
@@ -24,7 +27,7 @@
 <option >c</option>
 </select>
 <span>{{ selected }}</span> -->
-<Button class="cart-button">Cart    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""></Button>
+<Button class="cart-button1">?</Button>
 <div class="cart">
   <h1>{{cart.length}} in cart</h1>
   <Cart class="carty"
@@ -50,6 +53,8 @@
  </div>
 
   </div>
+</html>
+  
 </template>
 
 <script>
@@ -232,6 +237,7 @@ h1 {
   flex-flow: wrap;
   justify-content: center;
  margin: 7rem;
+ margin-top: 0rem;
 }
 .cardy{
   margin: 3rem 4rem;
@@ -244,12 +250,27 @@ h1 {
   height: 1.7rem;
   border: none;
 }
-.cart-button{
+.cart-button1{
   position: absolute;
   right: 0px;
   padding: 10px;
  margin-right: 7rem;
+ color: rgb(232,226,215);
+ background-color: rgb(232,226,215);
 }
+.cart-button1:hover, .cart-button1:active{
+  color: rgb(232,226,215);
+ background-color: rgb(232,226,215);
+}
+.cart-button{
+  position: absolute;
+  right: 0px;
+  padding: 10px;
+ margin-right: 9rem;
+ margin-top: .7rem;
+ 
+ }
+
 Button{
   justify-content: right;
 }

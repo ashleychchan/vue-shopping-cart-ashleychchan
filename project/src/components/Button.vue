@@ -15,5 +15,13 @@ button{
     border: none;
     padding: .7rem;
     justify-content: flex-end;
+    transition: .1s;
+}
+button:hover {background-color: rgb(41,43,131)}
+
+button:active {
+  background-color: rgb(41,43,131);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 </style>
