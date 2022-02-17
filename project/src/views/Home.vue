@@ -80,7 +80,7 @@ export default {
       message:"", 
       checkedNames:[],
       selected:"",
-      isShow:true,
+      isShow:false,
       cart:[],
       products:[
         {
