@@ -40,7 +40,7 @@ export default {
 .card{
     width: 30rem;
     height: 7.8rem;
-    background-color: rgb(231, 207, 245);
+    background-color: white;
     margin: 4rem auto;
     border: solid rgb(41,43,131) 3px;
    

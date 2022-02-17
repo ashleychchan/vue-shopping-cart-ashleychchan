@@ -97,7 +97,7 @@ export default {
           name: "beer",
           description:"too bad for you if are alcoholic",
           cost:"12.00",
-          img:"https://www.news10.com/wp-content/uploads/sites/64/2022/01/beer.jpg?strip=1&w=640"
+          img:"https://images.heb.com/is/image/HEBGrocery/000112972"
         },
         {
            quantity:1,
@@ -105,7 +105,7 @@ export default {
           name: "perfume",
           description:"too bad for you if you want to give people asthma attacks",
           cost:"97.00",
-          img:"https://m.media-amazon.com/images/I/41VIkN0BOML._SL1037_.jpg"
+          img:"https://www.sephora.com/productimages/sku/s513176-main-zoom.jpg"
         },
         {
            quantity:1,
@@ -161,7 +161,7 @@ export default {
           name: "toothpaste",
           description:"Too bad for you if you want clean teeth",
           cost:"11.00",
-          img:"https://www.cvs.com/bizcontent/merchandising/productimages/large/35000971593_4.jpg"
+          img:"https://preview.free3d.com/img/2018/11/2162680982233155094/zq7tlsat-900.jpg"
         },
         {
            quantity:1,
@@ -169,7 +169,7 @@ export default {
           name: "gummy candies",
           description:"Too bad for you want to live life YOLO",
           cost:"3.00",
-          img:"https://upload.wikimedia.org/wikipedia/commons/a/a6/Oursons_g%C3%A9latine_march%C3%A9_Rouffignac.jpg"
+          img:"https://i5.walmartimages.com/asr/dcb6fa14-7c2f-4619-a821-41124799d95d.1d087e06949f45f52ecd662ac266948a.jpeg"
         },
         {
            quantity:1,
@@ -177,7 +177,7 @@ export default {
           name: "hearts for transplantation",
           description:"Too bad for you if you have a broken heart",
           cost:"3300.00",
-          img:"https://www.news-medical.net/image.axd?picture=2018%2F12%2Fshutterstock_369086330.jpg"
+          img:"https://static01.nyt.com/images/2018/11/18/magazine/18mag-Xenotransplantation-image1/18mag-Xenotransplantation-image1-square640-v2.jpg"
         },
 
         {
