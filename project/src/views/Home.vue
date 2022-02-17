@@ -27,10 +27,10 @@
 <option >c</option>
 </select>
 <span>{{ selected }}</span> --> 
-
-<Button class="cart-button" >Cart    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""></Button>
+<Button class="cart-button" @click='isShow = !isShow'></Button>
+<button class="cart-button" @click='isShow = !isShow'> Cart    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""> </button>
  <h1 id="length">{{cart.length}} in</h1>
-<div class="cart" >
+<div class="cart" v-show='isShow' >
   <Cart class="carty"
   v-for="(product, index) in cart"
   @removeItemFromCart="removeItemFromCart(product)" 
