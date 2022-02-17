@@ -3,6 +3,7 @@
 <html lang="en">
 <title>Vegan Repellent</title>
 <div class="home">
+  
     <!-- <h1 v-if="graduated">{{student}}</h1>
     <h1 v-else>"stupid"</h1>
 <ul>
@@ -27,8 +28,9 @@
 <option >c</option>
 </select>
 <span>{{ selected }}</span> -->
-<Button class="cart-button1">?</Button>
-<div class="cart">
+
+ <Button class="cart-button"  >Cart    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""></Button>
+<div class="cart modal">
   <h1>{{cart.length}} in cart</h1>
   <Cart class="carty"
   v-for="(product, index) in cart"
@@ -40,7 +42,7 @@
  :cost="product.cost"
  v-on:open-Cart="openCart($event)"
  />
- 
+ <span class="close"></span>
 </div>
 
  <div class="cards">
@@ -265,16 +267,37 @@ h1 {
  background-color: rgb(232,226,215);
 }
 .cart-button{
-  position: absolute;
-  right: 0px;
+  left: 0px;
   padding: 10px;
- margin-right: 9rem;
+ margin-left: 80%;
  margin-top: .7rem;
  
  }
 
-Button{
-  justify-content: right;
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 </style>

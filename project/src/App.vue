@@ -2,12 +2,11 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Vegan Repellent</router-link> 
-      <Button class="cart-button" >Cart    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""></Button>
+     
     </div>
     <router-view/>
   </div>
 </template>
-
 <style>
 html, body{
  margin: 0;
@@ -32,6 +31,7 @@ body{
   font-size: 2rem;
   text-decoration: none;
   margin: 1rem;
+
 }
 
 #nav a.router-link-exact-active {
