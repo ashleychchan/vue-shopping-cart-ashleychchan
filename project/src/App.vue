@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Vegan Repellent</router-link> 
-      <Button class="cart-button">Cart    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""></Button>
+      <Button class="cart-button" >Cart    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""></Button>
     </div>
     <router-view/>
   </div>

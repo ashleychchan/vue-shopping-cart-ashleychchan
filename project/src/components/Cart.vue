@@ -24,6 +24,9 @@ export default {
        cost: String,
        quantity: Number,
    },
+   methods:{
+       
+   }
 
 }
 </script>

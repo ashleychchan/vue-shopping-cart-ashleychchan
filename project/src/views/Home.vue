@@ -37,8 +37,10 @@
  :image="product.img"
  :title="product.name"
  :quantity="product.quantity"
- :cost="product.cost"/>
- <p> </p>
+ :cost="product.cost"
+ v-on:open-Cart="openCart($event)"
+ />
+ 
 </div>
 
  <div class="cards">
@@ -205,19 +207,19 @@ buyNowState: function(){
   }
   },
     addItemToCart(product){
-      let found = this.cart.find(product => this.product.name ==product.name);
+    /*   let found = this.cart.find(product => product.name ==product.name);
 console.log(this.cart);
      if(found){
 found.quantity++;
      }else{
 this.cart.push(product);
-     }
-      
-      
+     } */
+     this.cart.push(product);
 },
   removeItemFromCart(product){
   this.cart.splice(this.cart.indexOf(product),1);
-    }
+    },
+    
   }
 }
 </script>
