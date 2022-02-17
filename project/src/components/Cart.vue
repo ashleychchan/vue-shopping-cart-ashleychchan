@@ -7,7 +7,6 @@
        <div class="card-text">
         <h2 class="card-title">{{title}}</h2>
         <h3 class="card-cost">${{cost}}</h3>
-        <p class="card-qty">quantity:{{quantity}}</p>
         </div>
         <div class="cardbutton">
 <Button @click="$emit('removeItemFromCart')" > x </Button>
@@ -22,7 +21,6 @@ export default {
        title:String,
        image:String,
        cost: String,
-       quantity: Number,
    },
    methods:{
        

@@ -4,7 +4,7 @@
         <h1 class="card-title">{{title}}</h1>
         <p class="card-description">{{description}}</p>
         <div class="card-line">
-            <h3 class="card-cost">${{cost}}</h3>
+            <h3 class="card-cost">$0.00</h3>
 <Button @click="$emit('addItemToCart')" > add to cart </Button>
         </div>
         

@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Vegan Repellent</router-link> 
-      <Button class="cart-button" >Cart    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""></Button>
+<p id="p">Because everyone deserves equal access to vegan repellent :)</p>
     </div>
     <router-view/>
   </div>
@@ -16,7 +16,12 @@ html, body{
 }
 body{
   background-color: white;
+  
 }
+#p{
+    text-align: left;
+   margin-top: .8rem;
+  }
 #nav {
   margin: 2rem;
   margin-bottom: 1rem;
@@ -44,6 +49,4 @@ body{
   width: 1.4rem;
   height: 1.4rem;
 }
-
-
 </style>

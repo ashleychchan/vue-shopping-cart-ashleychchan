@@ -3,7 +3,7 @@
 <html lang="en">
 <title>Vegan Repellent</title>
 <div class="home">
-    <!-- <h1 v-if="graduated">{{student}}</h1>
+<!--     <h1 v-if="graduated">{{student}}</h1>
     <h1 v-else>"stupid"</h1>
 <ul>
   <li v-for="animal in animals" :key="animal">{{animal}}
@@ -26,22 +26,22 @@
 <option >b</option>
 <option >c</option>
 </select>
-<span>{{ selected }}</span> -->
-<Button class="cart-button1">?</Button>
-<div class="cart">
-  <h1>{{cart.length}} in cart</h1>
+<span>{{ selected }}</span> --> 
+
+<Button class="cart-button" >Cart    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt=""></Button>
+ <h1 id="length">{{cart.length}} in</h1>
+<div class="cart" >
   <Cart class="carty"
   v-for="(product, index) in cart"
   @removeItemFromCart="removeItemFromCart(product)" 
  :key="index"
  :image="product.img"
  :title="product.name"
- :quantity="product.quantity"
- :cost="product.cost"
- v-on:open-Cart="openCart($event)"
- />
- 
+ :cost="product.cost"/>
+ <h3>total cost: $0.00</h3>
 </div>
+
+<div ></div>
 
  <div class="cards">
  <Card class="cardy" v-for="(product, index) in products"
@@ -80,6 +80,7 @@ export default {
       message:"", 
       checkedNames:[],
       selected:"",
+      isShow:true,
       cart:[],
       products:[
         {
@@ -199,6 +200,12 @@ authState: function(){
     this.loggedIn= false;
   }
 },
+showState: function(){
+  if(this.isShow===false){
+    this.isShow= true;
+  } else{
+    this.isShow= false;
+  }},
 buyNowState: function(){
   if(this.incart===false){
     this.incart= true;
@@ -252,6 +259,9 @@ h1 {
   height: 1.7rem;
   border: none;
 }
+.cart{
+ text-align: center;
+}
 .cart-button1{
   position: absolute;
   right: 0px;
@@ -269,12 +279,22 @@ h1 {
   right: 0px;
   padding: 10px;
  margin-right: 9rem;
- margin-top: .7rem;
+ margin-top: 0rem;
  
  }
 
 Button{
   justify-content: right;
+}
+p{
+  text-align: center;
+  margin: 2rem;
+}
+#length {
+  text-align: right;
+  margin-right: 18rem;
+  margin-top: 0rem;
+  
 }
 
 </style>
