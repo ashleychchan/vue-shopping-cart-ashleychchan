@@ -18,7 +18,7 @@ export default {
     props:{
        title:String,
        image:String,
-       cost: String,
+       cost: Number,
        description: String,
    },
 

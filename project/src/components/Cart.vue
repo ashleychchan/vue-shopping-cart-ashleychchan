@@ -6,7 +6,7 @@
             </div>
        <div class="card-text">
         <h2 class="card-title">{{title}}</h2>
-        <h3 class="card-cost">$0.00</h3>
+        <h3 class="card-cost">{{cost}}</h3>
         </div>
         <div class="cardbutton">
 <Button @click="$emit('removeItemFromCart')" > x </Button>
