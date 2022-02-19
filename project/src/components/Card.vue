@@ -4,7 +4,7 @@
         <h1 class="card-title">{{title}}</h1>
         <p class="card-description">{{description}}</p>
         <div class="card-line">
-            <h3 class="card-cost">$0.00</h3>
+            <h3 class="card-cost">${{cost}}.00</h3>
 <Button @click="$emit('addItemToCart')" > add to cart </Button>
         </div>
         
@@ -18,7 +18,7 @@ export default {
     props:{
        title:String,
        image:String,
-       cost: Number,
+       cost: String,
        description: String,
    },
 
@@ -48,6 +48,7 @@ img{
 }
  .card-description{
     margin: 1rem 0rem 2rem 0rem;
+     text-align: left;
  }
  .card-line{
   display: flex;

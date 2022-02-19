@@ -46,7 +46,7 @@
           :title="product.name"
           :cost="product.cost"
         />
-        <h3>total cost: ${{total}}</h3>
+        <h3 >total cost: ${{total}}.00</h3>
       </div>
 
       <div></div>
@@ -93,7 +93,6 @@ export default {
       products: [
         {
           quantity: 1,
-          id: 1,
           name: "insulin",
           description: "too bad for you if you have diabetes",
           cost: 88,
@@ -101,7 +100,6 @@ export default {
         },
         {
           quantity: 1,
-          id: 2,
           name: "beer",
           description: "too bad for you if are alcoholic",
           cost: 12,
@@ -109,93 +107,82 @@ export default {
         },
         {
           quantity: 1,
-          id: 3,
           name: "perfume",
           description:
             "too bad for you if you want to give people asthma attacks",
-          cost: "97.00",
+          cost: 97,
           img: "https://www.sephora.com/productimages/sku/s513176-main-zoom.jpg",
         },
         {
           quantity: 1,
-          id: 4,
           name: "plastic bag",
           description: "too bad for you if you want to choke turtles",
-          cost: "1 turtlelife ",
+          cost: 1,
           img: "https://www.popsci.com/uploads/2020/10/28/5BTIYSAMBJFPNBSWOHYQW4KKBE.jpg?auto=webp&width=1440&height=1080",
         },
         {
           quantity: 1,
-          id: 5,
           name: "nail polish",
           description: "too bad for your PLAIN NAILS",
-          cost: "15.00",
+          cost: 15,
           img: "https://cdn.shopify.com/s/files/1/2665/7478/products/1-PDP-AW-Bottle-Hand.png?v=1603778658",
         },
         {
           quantity: 1,
-          id: 6,
           name: "crayon",
           description: "too bad for your inner child",
-          cost: "7.00",
+          cost: 6,
           img: "https://shop.crayola.com/dw/image/v2/AALB_PRD/on/demandware.static/-/Sites-crayola-storefront/default/dwdfa66042/images/52-3008_8ct_Crayons_PDP_02.jpg?sw=790&sh=790&sm=fit&sfrm=jpg",
         },
         {
           quantity: 1,
-          id: 7,
           name: "cake mix",
           description: "too bad for you if you want fluffy cakes",
-          cost: "8.00",
+          cost: 8,
           img: "https://i5.walmartimages.com/asr/8b383ecf-736c-46ea-8758-2482639c1180.282e759491d1beeb1a497b4fc52ad75e.png?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
         },
         {
           quantity: 1,
-          id: 8,
           name: "bagel",
           description: "too bad for you if you like cream cheese",
-          cost: "2.00",
+          cost: 2,
           img: "https://cdn.loveandlemons.com/wp-content/uploads/2020/05/bagel-recipe.jpg",
         },
         {
           quantity: 1,
-          id: 9,
           name: "cigarettes",
           description: "Too bad for you if you want to be cool",
-          cost: "25.00",
+          cost: 24,
           img: "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2021_17/3468637/210428-cigarettes-jm-1128.jpg",
         },
         {
           quantity: 1,
-          id: 10,
           name: "toothpaste",
           description: "Too bad for you if you want clean teeth",
-          cost: "11.00",
+          cost: 11,
           img: "https://preview.free3d.com/img/2018/11/2162680982233155094/zq7tlsat-900.jpg",
         },
         {
           quantity: 1,
-          id: 11,
           name: "gummy candies",
           description: "Too bad for you want to live life YOLO",
-          cost: "3.00",
+          cost: 3,
           img: "https://i5.walmartimages.com/asr/dcb6fa14-7c2f-4619-a821-41124799d95d.1d087e06949f45f52ecd662ac266948a.jpeg",
         },
         {
           quantity: 1,
-          id: 12,
           name: "hearts for transplantation",
           description: "Too bad for you if you have a broken heart",
-          cost: "3300.00",
+          cost: 7300,
           img: "https://static01.nyt.com/images/2018/11/18/magazine/18mag-Xenotransplantation-image1/18mag-Xenotransplantation-image1-square640-v2.jpg",
         },
 
         {
           quantity: 1,
-          id: 13,
           name: "sprinkles",
           description:
             "Too bad for you if you like these delectable crunchy candies",
-          cost: "5.00",
+          cost: 5,
           img: "https://www.wilton.com/dw/image/v2/AAWA_PRD/on/demandware.static/-/Sites-wilton-product-master/default/dw466b587e/images/product/710-0-0438/710-0-0438-Wilton-Rainbow-Sprinkles-Mix-10-oz-A4.jpg?sw=800&sh=800",
         },
       ],
@@ -219,13 +206,6 @@ export default {
         this.isShow = true;
       } else {
         this.isShow = false;
-      }
-    },
-    buyNowState: function () {
-      if (this.incart === false) {
-        this.incart = true;
-      } else {
-        this.incart = false;
       }
     },
     addItemToCart(product) {

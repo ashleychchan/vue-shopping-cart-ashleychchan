@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Vegan Repellent</router-link> 
-<p id="p">Because everyone deserves equal access to vegan repellent :)</p>
+<p id="p">Because everyone deserves equal access to hate on vegans :)</p>
     </div>
     <router-view/>
   </div>

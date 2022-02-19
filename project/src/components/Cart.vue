@@ -6,7 +6,7 @@
             </div>
        <div class="card-text">
         <h2 class="card-title">{{title}}</h2>
-        <h3 class="card-cost">{{cost}}</h3>
+        <h3 class="card-cost">${{cost}}.00</h3>
         </div>
         <div class="cardbutton">
 <Button @click="$emit('removeItemFromCart')" > x </Button>
@@ -32,8 +32,8 @@ export default {
 .card{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr ;
-    grid-column-gap: 3rem;
-    display: flex;
+    grid-column-gap: 2rem;
+    
 
     
 }
@@ -53,15 +53,17 @@ img{
 }
 .card-title
 {
-    margin-top: .7rem;
+    margin-top: 1rem;
     text-align: left;
 }
  .card-description{
-     margin:  0rem 0rem 0rem 1rem
+     margin:  0rem 0rem 0rem 1rem;
  }
 
 Button{
-    margin-top: 3rem;
+    margin-top: 2.5rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 </style>
